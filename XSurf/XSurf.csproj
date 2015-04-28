@@ -46,6 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutoComplete.cs" />
     <Compile Include="Click.cs" />
     <Compile Include="Javascript.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

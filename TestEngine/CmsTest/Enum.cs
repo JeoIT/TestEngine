@@ -11,8 +11,8 @@ namespace CmsTest
         public enum Buttons
         {
             InboxNew = 1,
-            kapatmaboutonu = 2,
-            sss = 3
+            imza_ekle = 2
+            
 
             //bir ustu
         }
@@ -23,7 +23,10 @@ namespace CmsTest
 
         public enum Textbox
         {
-            Konu = 1
+            Konu = 1,
+            anahtar_kelime = 2,
+            belge_tarihi = 3
+            //nereye = 4
         }
     }
 }

@@ -14,7 +14,9 @@ namespace CmsTest
             List<Tuple<Enum.Buttons, By, Enum.ByMethods>> buttonsTuples = new List<Tuple<Enum.Buttons, By, Enum.ByMethods>>
             {
                 new Tuple<Enum.Buttons, By, Enum.ByMethods>(Enum.Buttons.InboxNew, By.Id("btnInboxNew"), Enum.ByMethods.ById),                
-                new Tuple<Enum.Buttons, By, Enum.ByMethods>(Enum.Buttons.kapatmaboutonu, By.Id("kapatmabutonununidsi"), Enum.ByMethods.ById)
+                new Tuple<Enum.Buttons, By, Enum.ByMethods>(Enum.Buttons.imza_ekle, By.Id("cke_52"), Enum.ByMethods.ById)
+                
+                
             };
 
             return buttonsTuples;
@@ -24,7 +26,11 @@ namespace CmsTest
         {
             List<Tuple<Enum.Textbox, By, Enum.ByMethods>> buttonsTuples = new List<Tuple<Enum.Textbox, By, Enum.ByMethods>>
             {
-                new Tuple<Enum.Textbox, By, Enum.ByMethods>(Enum.Textbox.Konu, By.Id("txtSubject"), Enum.ByMethods.ById)
+                new Tuple<Enum.Textbox, By, Enum.ByMethods>(Enum.Textbox.Konu, By.Id("txtSubject"), Enum.ByMethods.ById),
+                new Tuple<Enum.Textbox, By, Enum.ByMethods>(Enum.Textbox.anahtar_kelime, By.Id("txtTags"), Enum.ByMethods.ById),
+                new Tuple<Enum.Textbox, By, Enum.ByMethods>(Enum.Textbox.belge_tarihi, By.Id("txtDueDate"), Enum.ByMethods.ById)
+                //new Tuple<Enum.Textbox, By, Enum.ByMethods>(Enum.Textbox.nereye, By.Id("txtDistributionAgency2"), Enum.ByMethods.ById)
+               
             };
 
             return buttonsTuples;
