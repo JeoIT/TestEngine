@@ -11,7 +11,7 @@ namespace CmsTest
             Surf.GenerateDriver(1);
             IWebDriver driver = Surf.WebDriver;
 
-            Surf.NavigateToURL(driver, "http://test.jeoit.com");
+            Surf.NavigateToURL(driver, "http://testebys.jeoit.com");
 
             Click.InstantClick(driver, BySelector.ButtonBy(Enum.Buttons.InboxNew));
 
