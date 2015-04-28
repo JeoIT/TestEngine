@@ -11,11 +11,14 @@ namespace CmsTest
             Surf.GenerateDriver(1);
             IWebDriver driver = Surf.WebDriver;
 
-            Surf.NavigateToURL(driver, "http://localhost:58477/");
+            Surf.NavigateToURL(driver, "http://test.jeoit.com");
 
             Click.InstantClick(driver, BySelector.ButtonBy(Enum.Buttons.InboxNew));
 
-            string result = Javascript.ExecuteJs(driver, "return document.title");
+            Write.WriteText(driver, BySelector.TextBy(Enum.Textbox.Konu), 3, "deneme");
+
+            string result = Javascript.ExecuteJs(driver, "$('#selTemplate').val(287);$('#selTemplate').trigger('chosen:updated');$('#selTemplate').trigger('chosen:updated');$('#selTemplate').trigger('change');");
+            //Console.WriteLine(result);
 
             Console.WriteLine();
             Console.WriteLine("End Of Process");

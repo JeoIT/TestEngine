@@ -19,5 +19,20 @@ namespace CmsTest
 
             return result;
         }
+
+
+        public static By TextBy(Enum.Textbox text)
+        {
+            By result = null;
+
+            Tuple<Enum.Textbox, By, Enum.ByMethods> theButtonTuple = DynamicDictionary.TextList().SingleOrDefault(a => a.Item1 == text);
+
+            if (theButtonTuple != null)
+            {
+                result = theButtonTuple.Item2;
+            }
+
+            return result;
+        }
     }
 }
